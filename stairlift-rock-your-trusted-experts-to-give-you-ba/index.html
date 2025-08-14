@@ -207,13 +207,13 @@
                 </div>
             </div>
 
-            <h1 class="headline">South Miami Residents: How Stairlift Rock | Your trusted experts to give you back freedom! Is Restoring Independence—One Home at a Time</h1>
+            <h1 class="headline">South Miami Residents: How Stairlift Rock Is Restoring Freedom, One Home at a Time</h1>
 <div class="byline">By Eric D. | Updated <span id="dynamicDate"></span></div>
 <img src="https://rocksolid.news/images/IMAGE_PLACEHOLDER.png?_t=1752620429" alt="Image" class="article-img-top">
-<p>It happens quietly, often without warning. One day, the staircase in your South Miami home—once just part of the daily routine—starts to feel daunting. Maybe it’s a recent surgery, a health condition, or simply the passing of time. Suddenly, each step becomes a challenge, leaving you feeling <span class="highlight">frustrated, anxious, or even trapped</span> in your own home. You’re not alone. Thousands in our community are facing the same struggle, unsure where to turn for real, lasting help.</p>
-<p>But the emotional toll runs deeper than the physical. When you can’t move freely between floors, it’s not just your mobility at stake—it’s your sense of independence, your connection with loved ones, and the simple joy of living fully in the place you call home. Family gatherings shift. Bedrooms go unused. Some even consider leaving cherished homes behind, all because of a staircase. The truth is, <span class="highlight">no one should have to sacrifice their freedom or comfort for something as basic as getting up and down the stairs</span>.</p>
-<p>That’s exactly why Stairlift Rock | Your trusted experts to give you back freedom! exists. As South Miami’s trusted Stairlift specialists, they’ve made it their mission to help neighbors reclaim their homes—easily, affordably, and with compassion. Their expert team takes care of every detail, from a free, no-pressure consultation to fast, flawless installation. Every solution is thoughtfully tailored, ensuring you or your loved one can move with confidence, comfort, and peace of mind. Stairlift Rock’s local reputation is built on trust: countless South Miami families have rediscovered true independence, often in just a single day.</p>
-<p>Imagine waking up tomorrow and knowing the stairs are no longer an obstacle—but a bridge to everything you love. That’s the difference a customized Stairlift from Stairlift Rock can make. And right now, they’re offering a special limited-time savings for South Miami residents—plus a complimentary home safety check to make sure you get the perfect fit, risk-free. <span class="highlight">Your freedom is just one call away</span>.</p>
+<p>Imagine waking up in your own home, the sunlight streaming in, but the simple act of climbing your staircase feels like a mountain looming over your day. For so many South Miami residents, this is a daily reality—one filled with worry, frustration, and, too often, a growing sense of isolation. When stairs become a barrier, it’s not just about mobility—it’s about independence, dignity, and the comfort of staying in the home you love.</p>
+<p>But what happens when every trip upstairs is a risk? The fear of slipping, the struggle with pain, the frustration of relying on others—it all adds up. Maybe you’ve noticed your world getting smaller. Family dinners moved to the ground floor. Your favorite room upstairs gathering dust. Or, perhaps worst of all, the thought that moving out might be the only option. The emotional toll can be overwhelming. <span class="highlight">No one should have to feel like a stranger in their own home.</span></p>
+<p>That’s exactly why Stairlift Rock exists. Based right here in South Miami, they’ve dedicated themselves to helping neighbors like you regain the freedom and confidence you deserve. Their team understands that a Stairlift isn’t just a piece of equipment—it’s a lifeline. With Stairlift Rock, the process is simple, respectful, and tailored to your needs. From the very first conversation, you’ll feel heard, supported, and cared for by experts who genuinely understand what’s at stake. <span class="highlight">Imagine gliding effortlessly up your stairs, reclaiming every room, and saying goodbye to fear and frustration.</span> Stairlift Rock’s expert installation and ongoing support mean you can focus on what matters—enjoying your home and your life, your way.</p>
+<p>If you or a loved one is ready to take back control, now is the time to act. <span class="highlight">Contact Stairlift Rock today for a complimentary, pressure-free consultation</span> and discover how simple and affordable your solution can be. Don’t let another day go by feeling limited in your own home—freedom is just a call away with your local South Miami experts.</p>
 <div class="quiz-overlay">
     <div class="quiz-header">
         <!-- Progress Bar -->
@@ -380,7 +380,7 @@
                     <button type="button" class="quiz-back-btn" onclick="prevQuizStep(3)">
                         <i class="fas fa-arrow-left"></i> Back
                     </button>
-                    <button type="button" class="quiz-next-btn" onclick="nextQuizStep(5)">
+                    <button type="button"="quiz-next-btn" onclick="nextQuizStep(5)">
                         Continue <i class="fas fa-arrow-right"></i>
                     </button>
                 </div>
@@ -645,65 +645,77 @@
             color: #fff;
             border: none;
             border-radius: 8px;
-            padding: 12px 24px;
+            padding: 12px;
+            font-family: 'Inter', sans-serif;
             font-size: 16px;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
-            font-family: 'Inter', sans-serif;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
         }
         .quiz-next-btn:hover, .quiz-submit-btn:hover {
             background-color: #e60000;
-            transform: translateY(-2px);
         }
         .quiz-back-btn {
-            background-color: #f0f0f0;
+            flex: 1;
+            background-color: #e0e0e0;
             color: #333;
             border: none;
             border-radius: 8px;
-            padding: 12px 24px;
+            padding: 12px;
+            font-family: 'Inter', sans-serif;
             font-size: 16px;
+            font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
-            font-family: 'Inter', sans-serif;
-        }
-        .quiz-back-btn:hover {
-            background-color: #e0e0e0;
-        }
-        
-        /* Terms */
-        .quiz-terms {
-            margin: 15px 0;
-            font-size: 12px;
-            color: #666;
             display: flex;
-            align-items: flex-start;
+            align-items: center;
+            justify-content: center;
             gap: 8px;
         }
-        .quiz-terms input {
-            margin: 0;
-            flex-shrink: 0;
+        .quiz-back-btn:hover {
+            background-color: #d0d0d0;
+        }
+        
+        /* Error Messaging */
+        .quiz-error {
+            margin-top: 8px;
+            color: #ff0000;
+            font-size: 14px;
+            display: none;
+            align-items: center;
+            gap: 6px;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* Terms & Conditions */
+        .quiz-terms {
+            display: flex;
+            align-items: flex-start;
+            margin: 15px 0;
+        }
+        .quiz-terms label {
+            margin-left: 8px;
+            font-size: 12px;
+            color: #666;
+            font-family: 'Inter', sans-serif;
         }
         .quiz-terms a {
             color: #ff0000;
+            text-decoration: none;
+        }
+        .quiz-terms a:hover {
             text-decoration: underline;
         }
         
-        /* Error Messages */
-        .quiz-error {
-            color: #ff0000;
-            font-size: 14px;
-            margin: 10px 0;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        
-        /* Responsive */
+        /* Mobile Responsiveness */
         @media (max-width: 768px) {
+            .quiz-header {
+                padding: 10px;
+            }
             .quiz-content {
                 padding: 15px;
             }
@@ -715,228 +727,221 @@
             }
             .quiz-input {
                 font-size: 14px;
+                padding: 10px;
             }
-            .quiz-next-btn, .quiz-submit-btn, .quiz-back-btn {
-                font-size: 14px;
-                padding: 10px 20px;
+            .quiz-button-group {
+                flex-direction: column;
+            }
+            .quiz-next-btn, .quiz-submit-btn {
+                order: -1;
+            }
+            .quiz-back-btn {
+                order: 0;
             }
         }
     </style>
 
     <script>
-        let currentQuizStep = 1;
-        const totalSteps = 7;
+        (function() {
+            let quizCurrentStep = 1;
+            const quizTotalSteps = 7;
 
-        // Show quiz step
-        function showQuizStep(step) {
-            document.querySelectorAll('.quiz-step').forEach(el => {
-                el.classList.remove('active');
-            });
-            document.querySelector('[data-step="' + step + '"]').classList.add('active');
-            
-            // Update progress bar
-            updateQuizProgress(step);
-        }
-
-        // Next step
-        function nextQuizStep(nextStep) {
-            const currentStep = document.querySelector('.quiz-step.active');
-            const currentStepNumber = parseInt(currentStep.getAttribute('data-step'));
-            
-            // Validate current step
-            if (!validateQuizStep(currentStepNumber)) {
-                return;
+            function updateQuizProgress(step) {
+                const progressBar = document.querySelector('#quiz-progress-bar');
+                if (!progressBar) return;
+                const stepIndicators = document.querySelectorAll('.quiz-overlay .step');
+                
+                const progressPercent = (step / quizTotalSteps) * 100;
+                progressBar.style.width = progressPercent + '%';
+                
+                stepIndicators.forEach(indicator => {
+                    const indicatorStep = parseInt(indicator.getAttribute('data-step'));
+                    if (indicatorStep <= step) {
+                        indicator.classList.add('active');
+                    } else {
+                        indicator.classList.remove('active');
+                    }
+                });
             }
             
-            currentQuizStep = nextStep;
-            showQuizStep(nextStep);
-        }
-
-        // Previous step
-        function prevQuizStep(prevStep) {
-            currentQuizStep = prevStep;
-            showQuizStep(prevStep);
-        }
-
-        // Select quiz option
-        function selectQuizOption(element, name, value, nextStep) {
-            // Remove selected class from siblings
-            element.parentNode.querySelectorAll('.quiz-option').forEach(opt => {
-                opt.classList.remove('selected');
-            });
-            
-            // Add selected class to clicked option
-            element.classList.add('selected');
-            
-            // Check the radio button
-            element.querySelector('input').checked = true;
-            
-            // Hide error
-            const errorElement = element.closest('.quiz-step').querySelector('.quiz-error');
-            if (errorElement) {
-                errorElement.style.display = 'none';
+            function showQuizStep(step) {
+                const steps = document.querySelectorAll(".quiz-overlay .quiz-step");
+                steps.forEach(item => {
+                    if (parseInt(item.getAttribute("data-step")) === step) {
+                        item.classList.add("active");
+                    } else {
+                        item.classList.remove("active");
+                    }
+                });
+                
+                quizCurrentStep = step;
+                updateQuizProgress(step);
             }
-        }
-
-        // Toggle checkbox
-        function toggleQuizCheckbox(element, name, value) {
-            const checkbox = element.querySelector('input');
-            checkbox.checked = !checkbox.checked;
             
-            if (checkbox.checked) {
+            function selectQuizOption(element, name, value, nextStep) {
+                const options = document.querySelectorAll(`.quiz-overlay input[name="${name}"]`);
+                options.forEach(option => {
+                    option.parentElement.classList.remove('selected');
+                });
+                
                 element.classList.add('selected');
+                const input = element.querySelector('input');
+                input.checked = true;
+                
+                if (quizCurrentStep === 1 || quizCurrentStep === 2) {
+                    nextQuizStep(nextStep);
+                }
+            }
+            
+            function toggleQuizCheckbox(element, name, value) {
+                const otherOption = document.getElementById('question_3-other');
+                const checkboxes = document.querySelectorAll(`input[name="${name}[]"]`);
+                if (value === 'Other') {
+                    checkboxes.forEach(checkbox => {
+                        if (checkbox.value !== 'Other') {
+                            checkbox.checked = false;
+                            checkbox.parentElement.classList.remove('selected');
+                        }
+                    });
+                } else if (otherOption.checked) {
+                    otherOption.checked = false;
+                    otherOption.parentElement.classList.remove('selected');
+                }
+                const input = element.querySelector('input');
+                input.checked = !input.checked;
+                element.classList.toggle('selected', input.checked);
+            }
+            
+            function nextQuizStep(nextStep) {
+                const currentStepElement = document.querySelector(`.quiz-overlay .quiz-step[data-step="${quizCurrentStep}"]`);
+                const inputs = currentStepElement.querySelectorAll("input[required]");
+                let isValid = true;
+                
+                if (quizCurrentStep === 3) {
+                    const checked = currentStepElement.querySelectorAll(`input[name="question_3[]"]:checked`).length;
+                    isValid = checked > 0;
+                } else {
+                    inputs.forEach(input => {
+                        if (input.type === "radio" && !currentStepElement.querySelector(`input[name="${input.name}"]:checked`)) {
+                            isValid = false;
+                        } else if (input.type === "checkbox" && !input.checked) {
+                            isValid = false;
+                        } else if (!input.value.trim()) {
+                            isValid = false;
+                        } else if (input.name === "zip_code" && !/^\d{5}$/.test(input.value)) {
+                            isValid = false;
+                        } else if (input.type === "email" && !/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i.test(input.value)) {
+                            isValid = false;
+                        }
+                    });
+                }
+                
+                const errorNote = currentStepElement.querySelector(".quiz-error");
+                if (isValid) {
+                    errorNote.style.display = "none";
+                    showQuizStep(nextStep);
+                } else {
+                    errorNote.style.display = "flex";
+                }
+            }
+            
+            function prevQuizStep(prevStep) {
+                const currentStepElement = document.querySelector(`.quiz-overlay .quiz-step[data-step="${quizCurrentStep}"]`);
+                currentStepElement.querySelector(".quiz-error").style.display = "none";
+                showQuizStep(prevStep);
+            }
+            
+            function formatQuizPhoneNumber(input) {
+                let numbers = input.value.replace(/\D/g, '');
+                if (numbers.length > 10) {
+                    numbers = numbers.slice(0, 10);
+                }
+                let formatted = '';
+                if (numbers.length > 0) {
+                    formatted = '(' + numbers.substring(0, 3);
+                    if (numbers.length >= 4) {
+                        formatted += ') ' + numbers.substring(3, 6);
+                    }
+                    if (numbers.length >= 7) {
+                        formatted += '-' + numbers.substring(6, 10);
+                    }
+                }
+                input.value = formatted;
+            }
+            
+            window.selectQuizOption = selectQuizOption;
+            window.toggleQuizCheckbox = toggleQuizCheckbox;
+            window.nextQuizStep = nextQuizStep;
+            window.prevQuizStep = prevQuizStep;
+            window.formatQuizPhoneNumber = formatQuizPhoneNumber;
+            
+            function initQuiz() {
+                showQuizStep(1);
+            }
+            
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initQuiz);
             } else {
-                element.classList.remove('selected');
+                initQuiz();
             }
             
-            // Hide error
-            const errorElement = element.closest('.quiz-step').querySelector('.quiz-error');
-            if (errorElement) {
-                errorElement.style.display = 'none';
-            }
-        }
-
-        // Update progress
-        function updateQuizProgress(step) {
-            const progress = (step / totalSteps) * 100;
-            document.getElementById('quiz-progress-bar').style.width = progress + '%';
-            
-            // Update step indicators
-            document.querySelectorAll('.step').forEach((stepEl, index) => {
-                if (index + 1 <= step) {
-                    stepEl.classList.add('active');
-                } else {
-                    stepEl.classList.remove('active');
-                }
-            });
-        }
-
-        // Format phone number
-        function formatQuizPhoneNumber(input) {
-            let value = input.value.replace(/\D/g, '');
-            let formattedValue = '';
-            
-            if (value.length > 0) {
-                formattedValue = '(' + value.substring(0, 3);
-            }
-            if (value.length >= 4) {
-                formattedValue += ') ' + value.substring(3, 6);
-            }
-            if (value.length >= 7) {
-                formattedValue += '-' + value.substring(6, 10);
-            }
-            
-            input.value = formattedValue;
-        }
-
-        // Validate step
-        function validateQuizStep(step) {
-            const stepElement = document.querySelector('[data-step="' + step + '"]');
-            const errorElement = stepElement.querySelector('.quiz-error');
-            
-            switch(step) {
-                case 1:
-                case 2:
-                    const radio = stepElement.querySelector('input[type="radio"]:checked');
-                    if (!radio) {
-                        errorElement.style.display = 'block';
-                        return false;
+            // Add form submission handler
+            document.getElementById('quiz-form').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(this);
+                const quizAnswers = {};
+                const contactInfo = {};
+                
+                // Collect quiz answers
+                quizAnswers['Step 1'] = formData.get('homeowner');
+                quizAnswers['Step 2'] = formData.get('question_2');
+                quizAnswers['Step 3'] = Array.from(formData.getAll('question_3[]')).join(', ');
+                quizAnswers['ZIP Code'] = formData.get('zip_code');
+                
+                // Collect contact info
+                contactInfo.name = formData.get('full_name');
+                contactInfo.email = formData.get('email');
+                contactInfo.phone = formData.get('phone');
+                
+                // Get project and user info from URL parameters or page data
+                const urlParams = new URLSearchParams(window.location.search);
+                const projectId = urlParams.get('projectId') || window.projectId || 'unknown';
+                const userId = urlParams.get('userId') || window.userId || 'unknown';
+                
+                try {
+                    // Submit to our edge function
+                    const response = await fetch('/api/process-quiz-submission', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            projectId: projectId,
+                            userId: userId,
+                            name: contactInfo.name,
+                            email: contactInfo.email,
+                            phone: contactInfo.phone,
+                            quizAnswers: quizAnswers,
+                            timestamp: new Date().toISOString()
+                        })
+                    });
+                    
+                    if (response.ok) {
+                        // Show success message or redirect
+                        alert('Thank you! We have received your information and will contact you shortly.');
+                    } else {
+                        throw new Error('Failed to submit quiz');
                     }
-                    break;
-                case 3:
-                    const checkboxes = stepElement.querySelectorAll('input[type="checkbox"]:checked');
-                    if (checkboxes.length === 0) {
-                        errorElement.style.display = 'block';
-                        return false;
-                    }
-                    break;
-                case 4:
-                    const zipInput = stepElement.querySelector('#zip-input');
-                    if (!zipInput.value || !/^\d{5}$/.test(zipInput.value)) {
-                        errorElement.style.display = 'block';
-                        return false;
-                    }
-                    break;
-                case 5:
-                    const nameInput = stepElement.querySelector('input[name="full_name"]');
-                    if (!nameInput.value.trim()) {
-                        errorElement.style.display = 'block';
-                        return false;
-                    }
-                    break;
-                case 6:
-                    const emailInput = stepElement.querySelector('input[name="email"]');
-                    const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
-                    if (!emailInput.value || !emailPattern.test(emailInput.value)) {
-                        errorElement.style.display = 'block';
-                        return false;
-                    }
-                    break;
-                case 7:
-                    const phoneInput = stepElement.querySelector('input[name="phone"]');
-                    const termsCheckbox = stepElement.querySelector('#quiz-terms');
-                    if (!phoneInput.value || !termsCheckbox.checked) {
-                        errorElement.style.display = 'block';
-                        return false;
-                    }
-                    break;
-            }
-            
-            errorElement.style.display = 'none';
-            return true;
-        }
-
-        // Form submission
-        document.getElementById('quiz-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            if (!validateQuizStep(7)) {
-                return;
-            }
-            
-            // Collect form data
-            const formData = new FormData(this);
-            const data = {};
-            
-            for (let [key, value] of formData.entries()) {
-                if (key.includes('[]')) {
-                    const cleanKey = key.replace('[]', '');
-                    if (!data[cleanKey]) data[cleanKey] = [];
-                    data[cleanKey].push(value);
-                } else {
-                    data[key] = value;
-                }
-            }
-            
-            // Submit data
-            fetch('/api/process-quiz-submission', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(data)
-            })
-            .then(response => response.json())
-            .then(result => {
-                if (result.success) {
-                    alert('Thank you! We\'ll be in touch soon.');
-                    this.reset();
-                    showQuizStep(1);
-                } else {
+                } catch (error) {
+                    console.error('Error submitting quiz:', error);
                     alert('There was an error submitting your information. Please try again.');
                 }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('There was an error submitting your information. Please try again.');
             });
-        });
-
-        // Initialize
-        updateQuizProgress(1);
+        })();
     </script>
 </div>
-<p>Don’t let another day go by feeling limited in your own home. Reach out to Stairlift Rock | Your trusted experts to give you back freedom! and discover how simple it can be to regain your confidence, comfort, and independence. The stairs don’t have to win—take the first step toward a safer, happier home today.</p>
+<p>Experience the difference that true care and expertise can make. Join countless South Miami families who have already made the choice to restore independence and peace of mind with Stairlift Rock.</p>
 <div class="sources">Sources: Industry Report (2025)</div>
 
             <div class="floating-banner">
